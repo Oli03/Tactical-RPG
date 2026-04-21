@@ -1,0 +1,7 @@
+1. Hacer que el mapa se actulice correctamente. Osea que jugador se mueve, se actualiza, enemigo se mueve, se actualiza y asi sucesivamente. (Hecho)
+2. Pintar de celeste las posiciones donde el jugador se puede mover (Si cambia de posición, tammbién deberia cambiarse el color de las posiciones anteriores). (Hecho)
+3. Si es posible, que titilen (es probable que no exista esa función, no pasa nada en ese caso) (Hecho)
+4. Permitir que el usuario pueda mover con las flechas del teclado la posición donde quiere avanzar, a medida que se mueva, hay que poner una flecha.
+5. Poner una barra de opciones a la derecha una vez que el jugador se movio de lugar.
+6. Poner personas en vez de un cuadrado con un color en especifico.
+7. Poner un texto a la derecha que indique los eventos que van ocurriendo.

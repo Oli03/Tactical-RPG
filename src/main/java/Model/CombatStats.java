@@ -2,21 +2,21 @@ package Model;
 
 import java.util.ArrayList;
 
-public class Character {
-    boolean main_character;
+public class CombatStats {
     Integer life;
     boolean finish_turn;
-    ArrayList<Position> movableZone;
+    // The zone where the entity can move and interact in the current turn.
+    ArrayList<Position> playZone;
 
-    Character(boolean is_main_character, ArrayList<Position> movableZone) {
-        this.movableZone = movableZone;
-        this.main_character = is_main_character;
+    CombatStats(boolean isEnemy, ArrayList<Position> playZone) {
+        this.playZone = playZone;
         this.life = 10;
-        this.finish_turn = !is_main_character;
+        this.finish_turn = isEnemy;
     }
 
     public boolean ownerZone(int x, int y) {
-        for (Position pos : movableZone) {
+        for (Position pos : playZone) {
+            // Check that the position (x, y) is within the playable area.
             if (x == pos.getX() && y == pos.getY()) return true;
         }
 
@@ -28,6 +28,7 @@ public class Character {
     }
 
     public boolean hisTurn() {
+        // Beginning of a new turn.
         return !this.finish_turn;
     }
 
