@@ -1,3 +1,9 @@
+# Introduction
+
+This is a turn-based strategy game where the player explores a board, moves between cells, and engages in combat with other entities. The game combines movement, positioning, and battle mechanics into a simple grid-based experience.
+
+---
+
 # Class Documentation
 
 ## Overview
